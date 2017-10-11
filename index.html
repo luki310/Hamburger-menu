@@ -11,7 +11,7 @@
   <header>
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">jQuery - hamburger menu</a>
-      <ul class="navbar-nav mr-auto">
+      <ul id="hamburger-menu" class="navbar-nav mr-auto visible-no">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
@@ -25,10 +25,19 @@
           <a class="nav-link" href="#">Kontakt</a>
         </li>
       </ul>
+      <img src="img/menu.svg" alt="Hamburger menu" class="menu-icon">
     </nav>
   </header>
 
-
+  <section class="content">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div>
+          <h1 class="visible-no">Hamburger Menu</h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <nav class="navbar fixed-bottom navbar-dark bg-dark">

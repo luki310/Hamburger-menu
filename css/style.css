@@ -5,3 +5,52 @@ body {
 .center {
     margin: auto;
 }
+
+.content .row {
+    height:  calc(100vh - 111px);
+}
+
+#hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    padding: 20px 30px;
+    background-color: #343a40;
+    text-align: right;
+        height:  calc(100vh - 111px);
+}
+
+#hamburger-menu.visible-no {
+    display: none;
+}
+#hamburger-menu.visible-no {
+    display: block;
+}
+
+.visible-no {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.menu-icon {
+    background-color: #e4e4e4;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+.menu-icon:hover {
+    opacity: 0.8;
+}
+
+.visible, .visible-no, .menu-icon {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
